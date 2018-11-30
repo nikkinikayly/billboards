@@ -1,0 +1,7 @@
+<%= @billboard.id ? 'Edit billboard' : 'Create billboard' %>
+
+<%= form_for @billboard do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true, autofocus: true %>
+  <%= f.submit %>
+<% end %>
