@@ -1,7 +1,7 @@
 <h1><%= @billboard.name %></h1>
 
-<%= link_to 'view Songs', billboard_path(@billboard) %>
+<%= link_to 'View Songs', billboard_path(@billboard) %>
 
-<%= link_to 'edit sub', edit_billboard_path(@billboard) %>
+<%= link_to 'Add Song', edit_billboard_path(@billboard) %>
 
-<%= link_to 'delete sub', @billboard, method: :delete %>
+<%= link_to 'Delete Billboard', @billboard, method: :delete %>
