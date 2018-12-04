@@ -1,7 +1,7 @@
 <h1>Viewing all Artists</h1>
 
 <%= link_to 'Create New Artist', new_artist_path %>
-<% @artists.each do |artist| %>
+<% @artists.each do |artist, i| %>
     <%= link_to artist.name, artist %>
 <% end %>
 

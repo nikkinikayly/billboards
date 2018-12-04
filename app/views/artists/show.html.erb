@@ -1,9 +1,5 @@
 <%= @artist.name %>
 
-<% @songs.each do |song| %>
-    <%= link_to song.name, [@artist, song] %>
-<% end %>
-
-<%= link_to 'Add Song', new_artist_song_path, [@artist, song] %>
+<%= link_to 'Add Song', new_artist_song_path(@artist, @song) %>
 <%= link_to 'Edit Artist', edit_artist_path %>
 <%= link_to 'Go Back', artists_path %>
