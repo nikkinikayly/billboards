@@ -1,7 +1,19 @@
 <h1>Viewing all Artists</h1>
 
-<%= link_to 'Create New Artist', new_artist_path %>
-<% @artists.each do |artist, i| %>
-    <%= link_to artist.name, artist %>
-<% end %>
+<div class="section">
+    <%= link_to 'Back to Billboards', root_path %>
+    <div class="waves-effect waves-light btn"  >
+        <%= link_to 'Create New Artist', new_artist_path %>
+    </div>
+    <div class="waves-effect waves-light btn" >
+        <%= link_to 'Delete Artist', @artist, method: :delete %> 
+    </div>
+</div>
 
+<div class="section">
+<% @artists.each do |artist, i| %>
+    <li>
+    <%= link_to artist.name, artist %>
+    </li>
+<% end %>
+<div>

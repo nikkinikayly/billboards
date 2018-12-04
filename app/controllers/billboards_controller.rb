@@ -1,12 +1,12 @@
 class BillboardsController < ApplicationController
 
-before_action :set_billboard, only: [:show, :updat, :edit, :destroy]
+before_action :set_billboard, only: [:show, :update, :edit, :destroy]
 
   def index
     @billboards = Billboard.all
   end
 
-  def showS
+  def show
   end
 
   def new
