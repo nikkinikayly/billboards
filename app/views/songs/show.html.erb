@@ -1,7 +1,5 @@
 <h1><%= @artist.name %> - <%= @song.name %></h1>
 
-<%= @song.body %>
-
-<%= link_to 'edit song', edit_sub_song_path([@artist, @song]) %>
+<%= link_to 'edit song', edit_artist_song_path([@artist, @song]) %>
 <%= link_to 'Delete song', [@artist, @song], method: :delete %>
-<%= link_to 'back to song', sub_song_path(@artist) %>
+<%= link_to 'back to song', artist_song_path(@artist) %>
